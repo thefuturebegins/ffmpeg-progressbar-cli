@@ -59,6 +59,7 @@
   },
   "scripts": {
     "docs": "jsdoc --verbose --configure .jsdoc.json",
-    "start": "node ./lib/main.js"
+    "start": "node ./lib/main.js",
+    "npx-pack-local": "npm i -g"
   }
 }

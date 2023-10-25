@@ -27,7 +27,7 @@ $ npm install --global ffmpeg-progressbar-cli
 
 ## <a name="usage"/></a> Usage
 
-The installation process adds the `ffmpeg-bar` command to your system.   
+The installation process adds the `ffmpeg-bar` command to your system.
 This is a transparent wrapper, passing all commands to `ffmpeg`.
 
 To use it, simply launch `ffmpeg-bar` instead of `ffmpeg`, or replace  `ffmpeg` with `ffmpeg-bar` inside your scripts.
@@ -72,6 +72,15 @@ The share of (available) horizontal display real estate the progress bar beam sh
 
 ```bash
 $> BAR_BAR_SIZE_RATIO=0.5 ffmpeg-bar -i in.mp4 output.mp4
+```
+
+##### `BAR_FFMPEG_FILE_PATH`
+File path for which version of ffmpeg to use *(default: `which ffmpeg`)*
+
+###### Example
+
+```bash
+$> BAR_FFMPEG_FILE_PATH="/opt/homebrew/bin/ffmpeg" ffmpeg-bar -i in.mp4 output.mp4
 ```
 
 ## <a name="requirements"/></a> Requirements
